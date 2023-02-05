@@ -149,6 +149,9 @@ body .hide {
   color: #16c098;
 }
 
+.no-webp .content .content__box .customers .customers__box-title .customers__search input[type=text]{
+  background-image: url("../../img/table-icon-search.png"); }
+
 .content .content__box .customers .customers__box-title .customers__search input[type=text] {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -159,7 +162,6 @@ body .hide {
   height: 38px;
   border: none;
   outline: none;
-  background-image: url("../../img/table-icon-search.svg");
   background-size: 24px 24px;
   background-position: 8px center;
   background-repeat: no-repeat;
@@ -739,3 +741,5 @@ body .hide {
     display: none;
   }
 }
+
+.webp .content .content__box .customers .customers__box-title .customers__search input[type=text]{ background-image: url(../../img/table-icon-search.webp); }
