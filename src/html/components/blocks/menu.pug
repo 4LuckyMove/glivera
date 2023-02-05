@@ -1,0 +1,36 @@
+nav.menu
+	ul.menu__items 
+		li.menu__item 
+			.menu__box-link 
+				include ../../../svgicons/sidebar-icon-key.svg
+				a.menu__link(href='#dashboard') Dashboard
+		li.menu__item 
+			.menu__box-link 
+				include ../../../svgicons/sidebar-icon-square.svg
+				a.menu__link(href='#product') Product
+			.menu__selected
+				include ../../../svgicons/sidebar-icon-selected-not-active.svg
+		li.menu__item.menu__item_active
+			.menu__box-link 
+				include ../../../svgicons/sidebar-icon-user.svg
+				a.menu__link(href='#customers') Customers
+			.menu__selected
+				include ../../../svgicons/sidebar-icon-selected-active.svg
+		li.menu__item 
+			.menu__box-link 
+				include ../../../svgicons/sidebar-icon-wallet.svg
+				a.menu__link(href='#income') Income
+			.menu__selected
+				include ../../../svgicons/sidebar-icon-selected-not-active.svg
+		li.menu__item 
+			.menu__box-link 
+				include ../../../svgicons/sidebar-icon-discount.svg
+				a.menu__link(href='#promote') Promote
+			.menu__selected
+				include ../../../svgicons/sidebar-icon-selected-not-active.svg
+		li.menu__item 
+			.menu__box-link 
+				include ../../../svgicons/sidebar-icon-message.svg
+				a.menu__link(href='#help') Help
+			.menu__selected
+				include ../../../svgicons/sidebar-icon-selected-not-active.svg

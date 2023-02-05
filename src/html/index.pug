@@ -1,0 +1,17 @@
+extends includes/base.pug
+
+block vars
+	- var lang = 'en';
+	- var siteTitle = 'Dashboard';
+	- var favicon = "@img/favicon/favicon.png";
+
+block styles
+	link(rel="shortcut icon" href=favicon type="image/x-icon")
+
+block other-content 
+	include components/sidebar
+
+block content
+	include components/content
+
+block scripts

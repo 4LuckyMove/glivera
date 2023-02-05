@@ -1,0 +1,23 @@
+block vars
+	- var lang = 'en';
+	- var siteTitle = 'Dashboard';
+
+doctype html
+html(lang=lang)
+	head
+		meta(charset='utf-8')
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title #{siteTitle}
+		//- My CSS
+		link(rel="stylesheet" href="css/style.min.css")
+		block styles
+
+	body
+		.wrapper
+			block other-content
+			//- Content
+			main.main
+				block content
+		//- Scripts
+		script(src="js/app.min.js")
+		block scripts

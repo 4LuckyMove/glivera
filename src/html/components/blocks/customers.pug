@@ -1,0 +1,96 @@
+.customers
+	.customers__box-title 
+		.customers__title 
+			h2 All Customers
+			h5 Active Members
+		.customers__search 
+			input(type='text' id='table-search' name='q' placeholder='Search' )
+	.customer__box-table
+		table.customers__table 
+			thead.customers__header 
+				tr 
+					th(scope="col") Customer Name
+					th(scope="col") Company
+					th(scope="col") Phone Number
+					th(scope="col") Email
+					th(scope="col") Country
+					th.customers__status(scope="col") Status
+			tbody.customers__body 
+				tr 
+					td(scope='row' data-label='Customer Name') Jane Cooper
+					td(data-label='Company') Microsoft
+					td(data-label='Phone Number') (225) 555-0118
+					td(data-label='Email') jane@microsoft.com
+					td(data-label='Country') United States
+					td.customers__status.customers__status_active(data-label='Status')
+						span Active
+				tr 
+					td(scope='row' data-label='Customer Name') Floyd Miles
+					td(data-label='Company') Yahoo
+					td(data-label='Phone Number') (205) 555-0100
+					td(data-label='Email') floyd@yahoo.com
+					td(data-label='Country') Kiribati
+					td.customers__status.customers__status_inactive(data-label='Status')
+						span Inactive
+				tr 
+					td(scope='row' data-label='Customer Name') Ronald Richards
+					td(data-label='Company') Adobe
+					td(data-label='Phone Number') (302) 555-0107
+					td(data-label='Email') ronald@adobe.com
+					td(data-label='Country') Israel
+					td.customers__status.customers__status_inactive(data-label='Status')
+						span Inactive
+				tr 
+					td(scope='row' data-label='Customer Name') Marvin McKinney
+					td(data-label='Company') Tesla
+					td(data-label='Phone Number') (252) 555-0126
+					td(data-label='Email') marvin@tesla.com
+					td(data-label='Country') Iran
+					td.customers__status.customers__status_active(data-label='Status') 
+						span Active
+				tr 
+					td(scope='row' data-label='Customer Name') Jerome Bell
+					td(data-label='Company') Google
+					td(data-label='Phone Number') (629) 555-0129
+					td(data-label='Email') jerome@google.com
+					td(data-label='Country') Réunion
+					td.customers__status.customers__status_active(data-label='Status') 
+						span Active
+				tr 
+					td(scope='row' data-label='Customer Name') Kathryn Murphy
+					td(data-label='Company') Microsoft
+					td(data-label='Phone Number') (406) 555-0120
+					td(data-label='Email') kathryn@microsoft.com
+					td(data-label='Country') Curaçao
+					td.customers__status.customers__status_active(data-label='Status') 
+						span Active
+				tr 
+					td(scope='row' data-label='Customer Name') Jacob Jones
+					td(data-label='Company') Yahoo
+					td(data-label='Phone Number') (208) 555-0112
+					td(data-label='Email') jacob@yahoo.com
+					td(data-label='Country') Brazil
+					td.customers__status.customers__status_active(data-label='Status') 
+						span Active
+				tr 
+					td(scope='row' data-label='Customer Name') Kristin Watson
+					td(data-label='Company') Facebook
+					td(data-label='Phone Number') (704) 555-0127
+					td(data-label='Email') kristin@facebook.com
+					td(data-label='Country') Åland Islands
+					td.customers__status.customers__status_inactive(data-label='Status')
+						span Inactive
+			tfoot.customers__footer 
+				tr 
+					td(colspan=3).customers__count-users
+						p Showing data 1 to 8 of  256K entries
+					td(colspan=3).customers__pagination 
+						ul.customers__pages
+							li.customers__page.customers__prev.customers__page_disable <
+							li.customers__page.customers__page_active 1
+							li.customers__page 2
+							li.customers__page 3
+							li.customers__page 4
+							li.customers__page.customers__dots ...
+							li.customers__page 40
+							li.customers__page.customers__next >

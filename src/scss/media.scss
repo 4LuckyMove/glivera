@@ -1,0 +1,112 @@
+// Media
+// Min-width 600px
+@media (min-width: 600px) {
+	// Content
+	.content {
+		.content__box {
+			// Customers
+			.customers {
+				.customers__box-title {
+					padding-right: 53px;
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-between;
+					.customers__search {
+						input[type='text'] {
+							width: 216px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// Min-width 992px
+@media (min-width: 992px) {
+	// Content
+	.content {
+		padding-left: 71px;
+		padding-right: 98px;
+		&.content_show {
+			margin-left: 0;
+		}
+		.content__box {
+			// Customers
+			.customers {
+				.customer__box-table {
+					padding-left: 38px;
+					padding-right: 40px;
+					overflow-x: auto;
+					.customers__table {
+						tr {
+							padding-left: 0;
+							padding-right: 0;
+						}
+						.customers__header {
+							tr {
+								th {
+									width: auto;
+									height: auto;
+									margin: 0;
+									overflow: auto;
+									position: relative;
+									border-bottom: 1px solid $c-table-divider;
+									padding-bottom: 14px;
+								}
+							}
+						}
+						.customers__body {
+							tr {
+								border-bottom: none;
+								margin-bottom: 0;
+								display: table-row;
+								td {
+									display: table-cell;
+									text-align: left;
+									&::before {
+										content: none;
+										float: none;
+									}
+									&:last-child {
+										border-bottom: 1px solid $c-table-divider;
+									}
+								}
+							}
+						}
+						.customers__footer {
+							border-top: none;
+							tr {
+								display: table-row;
+								.customers__pagination {
+									.customers__pages {
+										justify-content: flex-end;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Min-width 1311px
+@media (min-width: 1311px) {
+	// Sidebar
+	.sidebar {
+		width: 306px;
+		overflow-x: auto;
+		position: relative;
+		.sidebar__container {
+			// Close Sidebar
+			.sidebar__close-button {
+				display: none;
+			}
+		}
+	}
+	// Hamburger
+	.hamburger {
+		display: none;
+	}
+}

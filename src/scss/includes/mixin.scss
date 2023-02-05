@@ -1,0 +1,10 @@
+@mixin poppins-fonts {
+	font-family: 'Poppins', sans-serif;
+	line-height: 1;
+	letter-spacing: -0.01;
+}
+@mixin poppins-edit($weight, $size, $color) {
+	font-weight: $weight;
+	font-size: $size;
+	color: $color;
+}

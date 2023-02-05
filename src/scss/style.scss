@@ -1,0 +1,39 @@
+// Fonts Family Poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+// Reset
+@import 'includes/reset-page';
+// Colors 
+@import 'includes/colors';
+// Fonts
+@import 'includes/const-fonts';
+// Mixins
+@import 'includes/mixin';
+// Styles
+html {
+	@include poppins-fonts;
+	@include poppins-edit($weight-medium, $fz-content, $c-main);
+}
+body {
+	background-color: $c-body-bg;
+	overflow: auto;
+	font-size: 1rem;
+	.hide {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	display: flex;
+}
+.main {
+	flex: 1;
+}
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+@import "page-blocks/**.scss";
+// Media 
+@import './media.scss';
